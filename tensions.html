@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Iran-Israel Crisis Global Market Impact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F7FA;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 18px;
+            height: 100%;
+            width: 4px;
+            background: #E5E7EB;
+        }
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 50%;
+                margin-left: -2px;
+            }
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-item-content {
+            position: relative;
+            margin-left: 3rem;
+            width: calc(100% - 3rem);
+        }
+        @media (min-width: 768px) {
+            .timeline-item-content {
+                width: 45%;
+                margin-left: 0;
+            }
+            .timeline-item:nth-child(odd) .timeline-item-content {
+                float: left;
+                text-align: right;
+                padding-right: 2rem;
+            }
+            .timeline-item:nth-child(even) .timeline-item-content {
+                float: right;
+                padding-left: 2rem;
+            }
+        }
+        .timeline-dot {
+            content: '';
+            position: absolute;
+            top: 0.25rem;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 9999px;
+            border: 4px solid #F5F7FA;
+            background: #00A6FB;
+        }
+        @media (min-width: 768px) {
+            .timeline-dot {
+                left: 50%;
+                margin-left: -10px;
+            }
+        }
+        .flowchart-arrow::after {
+            content: '\279C';
+            font-size: 2rem;
+            line-height: 1;
+            color: #FFC300;
+        }
+    </style>
+</head>
+<body class="text-[#4C5760]">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#4C5760]">Anatomy of a Crisis</h1>
+            <p class="mt-2 text-lg md:text-xl text-gray-600">The Global Market Impact of the June 2025 Iran-Israel Escalation</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        
+        <section id="introduction" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
+                <p class="text-lg text-gray-700 max-w-4xl mx-auto">In June 2025, a dramatic escalation in the long-standing "shadow war" between Iran and Israel sent shockwaves across the globe. Israel's "Operation Raising Lion," a direct and overt attack on Iranian nuclear and military facilities, marked a decisive turning point, instantly reshaping geopolitical risks and triggering significant volatility in global markets. This infographic unpacks the cascading effects of this crisis on energy, trade, and financial stability.</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center p-4 rounded-lg bg-red-50">
+                        <span class="text-5xl font-black text-[#F33A49]">10%+</span>
+                        <span class="mt-2 text-lg font-semibold">Surge in Oil Prices</span>
+                        <span class="text-sm text-gray-500">Highest since January 2025</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 rounded-lg bg-blue-50">
+                         <span class="text-5xl font-black text-[#00A6FB]">15%</span>
+                        <span class="mt-2 text-lg font-semibold">Spike in VIX "Fear Gauge"</span>
+                         <span class="text-sm text-gray-500">Indicating sharp market anxiety</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 rounded-lg bg-yellow-50">
+                         <span class="text-5xl font-black text-[#FFC300]">67%</span>
+                        <span class="mt-2 text-lg font-semibold">Drop in Red Sea Transits</span>
+                         <span class="text-sm text-gray-500">Compounding supply chain woes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2">The Path to Open Conflict</h2>
+                <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">The June 2025 strikes were not an isolated event but the culmination of an accelerating series of tit-for-tat actions. This timeline tracks the key escalations that transformed a covert shadow war into a direct military confrontation.</p>
+                <div class="timeline max-w-4xl mx-auto">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                            <time class="font-semibold text-[#00A6FB]">April 1, 2024</time>
+                            <h3 class="font-bold mt-1">Consulate Strike</h3>
+                            <p class="text-sm text-gray-600">Israeli airstrike on the Iranian consulate in Damascus kills senior Iranian generals, significantly raising tensions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                            <time class="font-semibold text-[#00A6FB]">April 14, 2024</time>
+                            <h3 class="font-bold mt-1">First Direct Retaliation</h3>
+                            <p class="text-sm text-gray-600">Iran launches its first major direct attack, firing over 300 drones and missiles at Israel, which are largely intercepted.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                            <time class="font-semibold text-[#00A6FB]">Sept 27, 2024</time>
+                            <h3 class="font-bold mt-1">Nasrallah Assassinated</h3>
+                            <p class="text-sm text-gray-600">An Israeli airstrike kills Hezbollah leader Hassan Nasrallah, a key Iranian proxy, near Beirut.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                            <time class="font-semibold text-[#F33A49]">June 13, 2025</time>
+                            <h3 class="font-bold mt-1">Operation Raising Lion</h3>
+                            <p class="text-sm text-gray-600">Israel launches its most significant overt attack on Iran, targeting nuclear and military sites across 12 provinces, marking a new phase of open conflict.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="energy-markets" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Shockwaves in Global Energy Markets</h2>
+                <p class="text-gray-600 mt-2 max-w-3xl mx-auto">The immediate market reaction centered on energy, the lifeblood of the global economy. The conflict's location in the world's most critical oil-producing region triggered fears of widespread supply disruptions.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-1">Oil Price Surge</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">The news of direct strikes on Iran caused an immediate flight to safety in energy markets. Both Brent and WTI crude oil benchmarks experienced their sharpest single-day percentage increase of the year, reflecting a significant new "geopolitical risk premium" being priced in by traders.</p>
+                    <div class="chart-container h-64 md:h-auto">
+                        <canvas id="oilPriceChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-1">The Strait of Hormuz Chokepoint</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">Fears were magnified by the strategic importance of the Strait of Hormuz, a narrow waterway Iran could threaten. Any disruption to traffic through this chokepoint would be catastrophic for global energy supply, impacting a massive portion of the world's daily oil and gas consumption.</p>
+                    <div class="chart-container h-64 md:h-auto">
+                        <canvas id="hormuzChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="maritime-trade" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Maritime Trade Under Siege</h2>
+                <p class="text-gray-600 mt-2 max-w-3xl mx-auto">The Iran-Israel escalation exacerbated an already severe crisis in global shipping, primarily centered on the Red Sea, and threatened to further inflate costs across the board.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-1">Exploding Freight Costs</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">Even before the June 2025 escalation, Houthi attacks in the Red Sea had forced shipping costs to skyrocket. This chart shows the dramatic increase in the average global price to ship a 40-foot container, more than doubling in just five months.</p>
+                    <div class="chart-container h-64 md:h-auto">
+                        <canvas id="shippingCostChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold mb-1">Soaring Insurance Premiums</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">In response to heightened risks, war risk insurance premiums for vessels transiting the Red Sea surged. This massive increase adds another layer of financial burden to shipping operations, the cost of which is ultimately passed down to consumers.</p>
+                    <div class="chart-container h-64 md:h-auto">
+                        <canvas id="insurancePremiumChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="financial-markets" class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Financial Market Turmoil & Flight to Safety</h2>
+                <p class="text-gray-600 mt-2 max-w-3xl mx-auto">Investors reacted swiftly to the geopolitical shock, shedding risky assets and flocking to traditional safe havens. The market movements painted a clear picture of rising fear and uncertainty.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-1">Global Equity Sell-Off</h3>
+                    <p class="text-sm text-gray-600 mb-4">Major U.S. stock indices tumbled as investors digested the news, with declines of over 1.5% in some cases, wiping billions off market valuations in a single session.</p>
+                    <div class="chart-container h-64 md:h-auto">
+                        <canvas id="equitySelloffChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-1">Sector Rotation</h3>
+                    <p class="text-sm text-gray-600 mb-4">The turmoil created clear winners and losers. Defense stocks rallied on expectations of increased military spending, while airline stocks fell sharply due to soaring fuel costs and flight disruptions.</p>
+                     <div class="chart-container h-64 md:h-auto">
+                        <canvas id="sectorImpactChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-1">Rush to Safe Havens</h3>
+                    <p class="text-sm text-gray-600 mb-4">In a classic risk-off move, investors piled into assets perceived as safe. Gold prices climbed toward record highs, and the U.S. dollar strengthened as market participants sought refuge from the volatility.</p>
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-center">
+                            <div class="p-3 bg-yellow-100 rounded-full">
+                                <span class="text-2xl">🥇</span>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold text-lg text-[#FFC300]">Gold Price Climbs 1.7%</div>
+                                <div class="text-sm text-gray-500">Approaching record highs near $3,444/oz</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="p-3 bg-green-100 rounded-full">
+                                <span class="text-2xl">💵</span>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold text-lg text-green-600">US Dollar Strengthens</div>
+                                <div class="text-sm text-gray-500">Gains against Yen and Swiss Franc</div>
+                            </div>
+                        </div>
+                         <div class="flex items-center">
+                            <div class="p-3 bg-red-100 rounded-full">
+                                <span class="text-2xl">📉</span>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold text-lg text-red-600">Bonds Fall on Inflation Fear</div>
+                                <div class="text-sm text-gray-500">10-Year Treasury yield rises to 4.42%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="economic-fallout" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2">The Broader Economic Fallout</h2>
+                <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">The conflict's effects extend far beyond initial market shocks, threatening to reignite global inflation, slow economic growth, and expose deep vulnerabilities in international supply chains, creating a risk of stagflation.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 text-center">
+                    <div class="p-4 rounded-lg bg-gray-50 border w-full md:w-auto">
+                        <p class="font-bold text-lg">Geopolitical Conflict</p>
+                        <p class="text-sm text-gray-500">Direct Iran-Israel Escalation</p>
+                    </div>
+                    <div class="flowchart-arrow"></div>
+                    <div class="p-4 rounded-lg bg-gray-50 border w-full md:w-auto">
+                        <p class="font-bold text-lg">Market Shocks</p>
+                        <p class="text-sm text-gray-500">Oil & Shipping Costs Surge</p>
+                    </div>
+                    <div class="flowchart-arrow"></div>
+                    <div class="p-4 rounded-lg bg-gray-50 border w-full md:w-auto">
+                        <p class="font-bold text-lg text-[#F33A49]">Rising Inflation</p>
+                        <p class="text-sm text-gray-500">Higher input costs passed to consumers</p>
+                    </div>
+                     <div class="flowchart-arrow"></div>
+                    <div class="p-4 rounded-lg bg-gray-50 border w-full md:w-auto">
+                        <p class="font-bold text-lg text-[#00A6FB]">Slowing Growth</p>
+                        <p class="text-sm text-gray-500">Dampened demand & confidence</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <div class="inline-block p-4 rounded-lg bg-red-100 text-red-800 border border-red-200">
+                         <p class="font-bold text-2xl">Risk of STAGFLATION</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-white mt-16">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>Data sourced from the "Iran-Israel Escalation: Reshaping Global Market Dynamics" report. This infographic is for illustrative purposes only and does not constitute financial advice. The situation remains highly fluid and unpredictable.</p>
+            <p class="mt-2">Created June 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const energeticPlayfulPalette = {
+                blue: '#00A6FB',
+                red: '#F33A49',
+                yellow: '#FFC300',
+                darkGray: '#4C5760',
+                lightGray: '#A0AEC0',
+            };
+
+            const wrapLabel = (str, maxLen = 16) => {
+                if (str.length <= maxLen) return str;
+                const words = str.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > maxLen) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine) lines.push(currentLine);
+                return lines;
+            };
+            
+            const defaultChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: 'rgba(0,0,0,0.8)',
+                        titleFont: { size: 14, family: "'Inter', sans-serif", weight: 'bold' },
+                        bodyFont: { size: 12, family: "'Inter', sans-serif" },
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: { family: "'Inter', sans-serif" }
+                        },
+                        grid: {
+                           color: '#E5E7EB'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: { family: "'Inter', sans-serif" }
+                        },
+                         grid: {
+                           display: false
+                        }
+                    }
+                }
+            };
+
+            const oilPriceChartCtx = document.getElementById('oilPriceChart');
+            if(oilPriceChartCtx) {
+                new Chart(oilPriceChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Brent Crude', 'WTI Crude'],
+                        datasets: [{
+                            label: 'Price Before Strike (USD)',
+                            data: [66.47, 68.41],
+                            backgroundColor: energeticPlayfulPalette.lightGray,
+                            borderColor: energeticPlayfulPalette.darkGray,
+                            borderWidth: 1
+                        }, {
+                            label: 'Price After Strike (USD)',
+                            data: [73.12, 73.20],
+                            backgroundColor: energeticPlayfulPalette.red,
+                            borderColor: energeticPlayfulPalette.red,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: defaultChartOptions
+                });
+            }
+
+            const hormuzChartCtx = document.getElementById('hormuzChart');
+            if(hormuzChartCtx) {
+                new Chart(hormuzChartCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Global Oil Consumption via Hormuz', 'Rest of World'],
+                        datasets: [{
+                            data: [30, 70],
+                            backgroundColor: [energeticPlayfulPalette.blue, '#E5E7EB'],
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        ...defaultChartOptions,
+                        cutout: '70%',
+                        scales: { y: { display: false }, x: { display: false } }
+                    }
+                });
+            }
+            
+            const shippingCostChartCtx = document.getElementById('shippingCostChart');
+            if(shippingCostChartCtx) {
+                new Chart(shippingCostChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Dec 2023', 'May 2024'],
+                        datasets: [{
+                            label: 'Avg. 40ft Container Price (USD)',
+                            data: [1521, 3159],
+                            backgroundColor: [energeticPlayfulPalette.lightGray, energeticPlayfulPalette.blue],
+                        }]
+                    },
+                    options: {
+                        ...defaultChartOptions,
+                        plugins: { ...defaultChartOptions.plugins, legend: { display: false }}
+                    }
+                });
+            }
+
+            const insurancePremiumChartCtx = document.getElementById('insurancePremiumChart');
+            if(insurancePremiumChartCtx) {
+                new Chart(insurancePremiumChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Pre-Crisis', 'Post-Crisis'],
+                        datasets: [{
+                            label: 'War Risk Premium (% of Ship Value)',
+                            data: [0.07, 2.0],
+                            backgroundColor: [energeticPlayfulPalette.lightGray, energeticPlayfulPalette.yellow],
+                        }]
+                    },
+                    options: {
+                        ...defaultChartOptions,
+                        indexAxis: 'y',
+                         plugins: { ...defaultChartOptions.plugins, legend: { display: false }}
+                    }
+                });
+            }
+            
+            const equitySelloffChartCtx = document.getElementById('equitySelloffChart');
+            if(equitySelloffChartCtx) {
+                new Chart(equitySelloffChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Dow Jones', 'S&P 500', 'Nasdaq'],
+                        datasets: [{
+                            label: 'Index Decline (%)',
+                            data: [-1.52, -1.0, -1.16],
+                            backgroundColor: energeticPlayfulPalette.red
+                        }]
+                    },
+                    options: {
+                        ...defaultChartOptions,
+                         plugins: { ...defaultChartOptions.plugins, legend: { display: false }}
+                    }
+                });
+            }
+            
+            const sectorImpactChartCtx = document.getElementById('sectorImpactChart');
+            if(sectorImpactChartCtx) {
+                new Chart(sectorImpactChartCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [wrapLabel('Defense Contractors (RTX, etc.)'), 'Energy (Exxon Mobil)', wrapLabel('Airlines (Delta, etc.)')],
+                        datasets: [{
+                            label: 'Stock Price Change (%)',
+                            data: [3.0, 1.7, -4.0],
+                            backgroundColor: (context) => {
+                                const value = context.dataset.data[context.dataIndex];
+                                return value > 0 ? energeticPlayfulPalette.blue : energeticPlayfulPalette.red;
+                            }
+                        }]
+                    },
+                    options: {
+                       ...defaultChartOptions,
+                       indexAxis: 'y',
+                       plugins: { ...defaultChartOptions.plugins, legend: { display: false }}
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
